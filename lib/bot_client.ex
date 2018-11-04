@@ -1,6 +1,6 @@
 defmodule BotClient do
   @moduledoc """
-  Interface to a computer-based hangman game.
+  Interface to an artificial intelligence that guesses words (joke).
   """
-  defdelegate play(), to: BotClient.Interact, as: :start
+  defdelegate guess(), to: BotClient.Guesser
 end
