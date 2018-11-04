@@ -1,18 +1,6 @@
 defmodule BotClient do
   @moduledoc """
-  Documentation for BotClient.
+  Interface to a computer-based hangman game.
   """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> BotClient.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  defdelegate play(), to: BotClient.Interact, as: :start
 end
